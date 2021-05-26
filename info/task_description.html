@@ -31,19 +31,19 @@
     </p>
 
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">isAcceptablePassword('short') == false
-isAcceptablePassword('short54') == true
-isAcceptablePassword('muchlonger') == true
-isAcceptablePassword('ashort') == false
-isAcceptablePassword('muchlonger5') == true
-isAcceptablePassword('sh5') == false
-isAcceptablePassword('1234567') == false
-isAcceptablePassword('12345678910') == true
+<pre class="brush: javascript">isAcceptablePassword('short') == False
+isAcceptablePassword('short54') == True
+isAcceptablePassword('muchlonger') == False
+isAcceptablePassword('ashort') == False
+isAcceptablePassword('muchlonger5') == True
+isAcceptablePassword('sh5') == False
+isAcceptablePassword('1234567') == False
+isAcceptablePassword('12345678910') == True
 </pre>
 {% else %}
 <pre class="brush: python">is_acceptable_password('short') == False
 is_acceptable_password('short54') == True
-is_acceptable_password('muchlonger') == True
+is_acceptable_password('muchlonger') == False
 is_acceptable_password('ashort') == False
 is_acceptable_password('muchlonger5') == True
 is_acceptable_password('sh5') == False
